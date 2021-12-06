@@ -5,7 +5,8 @@
 Official repository for  MAD: A Scalable Dataset for Language Grounding in Videos from Movie Audio Descriptions. [[ArXiv Preprint](https://arxiv.org/abs/2112.00431)]
 
 
-<div align="center" valign="middle"><img height="250px" src="https://drive.google.com/uc?export=view&id=14c5sPpBLQlHLRXhZvM-61iieWDq0ZTbX"></div>
+<!-- <div align="center" valign="middle"><img height="250px" src="https://drive.google.com/uc?export=view&id=14c5sPpBLQlHLRXhZvM-61iieWDq0ZTbX"></div> -->
+![mad](https://user-images.githubusercontent.com/26504816/144832743-a4852b5e-ec40-47e4-aa8c-b470e0638ef8.jpg)
 
 
 # Coming soon
