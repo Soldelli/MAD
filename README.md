@@ -23,9 +23,9 @@ To get access to the MAD dataset (annotations and pre-extracted features) please
 
 1- Complete this form ([link](https://forms.gle/hxR4TrQPFuNGpzcr8)) and sign the NDA (Non Disclosure Agreement).
 
-2- We will verify the corretness of the provided information. 
+2- We will verify the correctness of the provided information. 
 
-2- You will receive an email with a link to download all the available content.
+3- You will receive an email with a link to download all the available content.
 
 See the data documentation [here](doc/README.md). 
 
