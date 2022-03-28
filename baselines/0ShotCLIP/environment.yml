@@ -1,0 +1,47 @@
+name: 0ShotCLIP
+channels:
+  - pytorch
+  - conda-forge
+  - anaconda
+  - defaults
+dependencies:
+  - _libgcc_mutex=0.1=main
+  - _openmp_mutex=4.5=1_gnu
+  - blas=1.0=mkl
+  - ca-certificates=2020.10.14=0
+  - certifi=2020.6.20=py37_0
+  - colorama=0.4.4=pyh9f0ad1d_0
+  - cudatoolkit=11.3.1=h2bc3f7f_2
+  - h5py=2.10.0=py37hd6299e0_1
+  - hdf5=1.10.6=hb1b8bf9_0
+  - intel-openmp=2022.0.1=h06a4308_3633
+  - ld_impl_linux-64=2.35.1=h7274673_9
+  - libffi=3.3=he6710b0_2
+  - libgcc-ng=9.3.0=h5101ec6_17
+  - libgfortran-ng=7.3.0=hdf63c60_0
+  - libgomp=9.3.0=h5101ec6_17
+  - libstdcxx-ng=9.3.0=hd4cf53a_17
+  - libuv=1.40.0=h7b6447c_0
+  - mkl=2022.0.1=h06a4308_117
+  - mkl_fft=1.0.6=py37h7dd41cf_0
+  - mkl_random=1.0.1=py37h4414c95_1
+  - ncurses=6.3=h7f8727e_2
+  - numpy=1.15.4=py37h1d66e8a_0
+  - numpy-base=1.15.4=py37h81de0dd_0
+  - openssl=1.1.1m=h7f8727e_0
+  - pip=21.2.2=py37h06a4308_0
+  - python=3.7.11=h12debd9_0
+  - python_abi=3.7=2_cp37m
+  - pytorch=1.11.0=py3.7_cuda11.3_cudnn8.2.0_0
+  - pytorch-mutex=1.0=cuda
+  - readline=8.1.2=h7f8727e_1
+  - setuptools=58.0.4=py37h06a4308_0
+  - six=1.15.0=py_0
+  - sqlite=3.37.2=hc218d9a_0
+  - terminaltables=3.1.10=pyhd8ed1ab_0
+  - tk=8.6.11=h1ccaba5_0
+  - tqdm=4.63.0=pyhd8ed1ab_0
+  - typing_extensions=3.10.0.2=pyh06a4308_0
+  - wheel=0.37.1=pyhd3eb1b0_0
+  - xz=5.2.5=h7b6447c_0
+  - zlib=1.2.11=h7f8727e_4

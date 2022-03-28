@@ -1,0 +1,76 @@
+MODEL:
+  ARCHITECTURE: "VLG"
+  PRETRAINV: 'datasets/gcnext_warmup/gtad_best.pth.tar'
+  VLG:
+    NUM_CLIPS: 64
+    NEG_PROB: 0.7
+    FEATPOOL:
+      INPUT_SIZE: 512
+      HIDDEN_SIZE: 512 
+      KERNEL_SIZE: 1 
+      DROPOUT: 0.0
+      POS: 'none' 
+      GROUPS: 32
+      WIDTH_GROUP: 4
+      NUM_AGGREGATOR_LAYERS: 7
+      NUM_NEIGHBOURS: 7
+    FEAT2D:
+      POOLING_COUNTS: [5,8,8,8]
+    MATCH:
+      DROPOUT_GM: 0.0
+      NUM_NEIGHBOURS: 5 
+      GROUPS: 32
+      WIDTH_GROUP: 4
+    INTEGRATOR:
+      NUM_AGGREGATOR_LAYERS: 0 # SELECT >0 TO INCLUDE SYNTACGCN, DOES NOT WORK WITH CLIP FEATS
+      QUERY_HIDDEN_SIZE: 512
+      DROPOUT_LINEAR: 0.0
+      DROPOUT_SGCN: 0.0
+      LSTM:
+        NUM_LAYERS: 1
+        BIDIRECTIONAL: False
+        DROPOUT: 0.0 
+    MOMENT_POOLING:
+      ATTENTION_MODE: 'cross_learnable' 
+    PREDICTOR:
+      POS: 'cos' 
+      HIDDEN_SIZE: 512 
+      KERNEL_SIZE: 1 
+      DROPOUT_CONV: 0.0
+      NUM_STACK_LAYERS: 5 
+    LOSS:
+      MIN_IOU: 0.1
+      MAX_IOU: 1.0 
+DATASETS:
+  TRAIN: ("MAD_train",) 
+  VAL: ("MAD_val",) 
+  TEST: ("MAD_test",) 
+INPUT:
+  STRIDE: 1
+  LANG_FEAT: clip
+  NUM_PRE_CLIPS:   128 
+  PRE_QUERY_SIZE:  512  # 300 for glove and 512 for clip
+DATALOADER:
+  NUM_WORKERS: 0 
+SOLVER:
+  LR: 0.0001 
+  LR_STEP_SIZE: 25 
+  LR_GAMMA: 0.5 
+  BATCH_SIZE: 128
+  MAX_EPOCH: 50 
+  TEST_PERIOD: 51
+TEST:
+  STRIDE : 64
+  NMS_THRESH: 0.3
+  BATCH_SIZE: 1
+
+load_path: null # none
+rng_seed: 0
+logname: null # none
+expname: null
+OUTPUT_DIR: outputs/model
+expid: null
+wandb:
+  use_wandb: False
+  project: vlg-mad  # name of the wandb project
+  entity: audiovault
