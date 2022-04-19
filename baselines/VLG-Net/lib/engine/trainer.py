@@ -69,7 +69,6 @@ def do_train(
                 loss = model(batches.feats, 
                             batches.queries, 
                             batches.wordlens, 
-                            batches.syntactic_dep, 
                             targets
                             )
             if writer is not None:
