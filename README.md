@@ -51,12 +51,13 @@ We will soon release a docker image for simplifying this process.
 # Citation
 If any part of our paper is helpful to your work, please cite with:
 ```
-@inproceedings{soldan2022mad,
-      title={MAD: A Scalable Dataset for Language Grounding in Videos from Movie Audio Descriptions}, 
-      author={Mattia Soldan and Alejandro Pardo and Juan León Alcázar and Fabian Caba Heilbron and Chen Zhao and Silvio Giancola and Bernard Ghanem},
-      booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-      month     = {June},
-      year      = {2022}
+@InProceedings{Soldan_2022_CVPR,
+    author    = {Soldan, Mattia and Pardo, Alejandro and Alc\'azar, Juan Le\'on and Caba, Fabian and Zhao, Chen and Giancola, Silvio and Ghanem, Bernard},
+    title     = {MAD: A Scalable Dataset for Language Grounding in Videos From Movie Audio Descriptions},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2022},
+    pages     = {5026-5035}
 }
 
 @article{rohrbach2017movie,
