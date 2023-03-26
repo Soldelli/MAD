@@ -9,6 +9,8 @@ Paper accepted @CVPR22.
 <!-- <div align="center" valign="middle"><img height="250px" src="https://drive.google.com/uc?export=view&id=14c5sPpBLQlHLRXhZvM-61iieWDq0ZTbX"></div> -->
 ![mad](https://user-images.githubusercontent.com/26504816/144832743-a4852b5e-ec40-47e4-aa8c-b470e0638ef8.jpg)
 
+
+
 # What is MAD?
 MAD is a large-scale dataset collected from Movie Audio Descriptions for the Language Grounding in Videos task. It comprises a total of 384K sentences grounded in over 1.2K hours of continuous videos from 650 different and diverse movies. 
 
@@ -25,12 +27,22 @@ To get access to the MAD dataset (annotations and pre-extracted features) please
 
 2- We will verify the correctness of the provided information. 
 
-3- You will receive an email with a link to download all the available content.
+3- You will receive an email with the credentials to download the data.
 
 See the data documentation [here](doc/README.md). 
 
+# Data Download
+The confirmation email will contain LINK and PASSWORD to access the data. Each file can be downloaded from the web interface or through the provided script `MAD_downloader.py`, which can be used as follows:
 
-# Baselines
+```bash 
+python MAD_downloader.py --destination_folder {PATH_TO_DOWNLOAD} --download_link {LINK} --password {PASSWORD} 
+```
+
+Required Dependencies: `pip install google-measurement-protocol tqdm`
+
+
+
+# Video-Language Grounding Baselines
 This repository contains the code for the baselines used in the main paper. To reproduce the results and use our code follow these two links: 
 
 - Zero Shot CLIP ([link](baselines/0ShotCLIP/))
@@ -44,7 +56,6 @@ Nonetheless, to foster new research and to keep up with constantly changing need
 If you are in need of a new set of features (besides those we already provide), please reach out via email or open an issue on this repo. </br>
 
 We will soon release a docker image for simplifying this process.
-
 
 
 
