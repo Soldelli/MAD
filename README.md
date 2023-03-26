@@ -9,6 +9,12 @@ Paper accepted @CVPR22.
 <!-- <div align="center" valign="middle"><img height="250px" src="https://drive.google.com/uc?export=view&id=14c5sPpBLQlHLRXhZvM-61iieWDq0ZTbX"></div> -->
 ![mad](https://user-images.githubusercontent.com/26504816/144832743-a4852b5e-ec40-47e4-aa8c-b470e0638ef8.jpg)
 
+# News
+
+**[March 2023]** MAD-v2 is now available, check this ![link](link) for more details. </br>
+**[June 2022]** MAD-v1 accepted at CVPR2022. </br>
+**[June 2022]** MAD-v1 release. </br>
+
 
 
 # What is MAD?
@@ -30,6 +36,8 @@ To get access to the MAD dataset (annotations and pre-extracted features) please
 3- You will receive an email with the credentials to download the data.
 
 See the data documentation [here](doc/README.md). 
+
+
 
 # Data Download
 The confirmation email will contain LINK and PASSWORD to access the data. Each file can be downloaded from the web interface or through the provided script `MAD_downloader.py`, which can be used as follows:
@@ -81,4 +89,13 @@ If any part of our paper is helpful to your work, please cite with:
       year={2017},
       publisher={Springer}
 }
+```
+
+If you used MAD-v2 annotations kindly also cite this work:
+```
+@InProceedings{han2023autoad,
+    title={{AutoAD}: Movie Description in Context},  
+    author={Tengda Han and Max Bain and Arsha Nagrani and G\"ul Varol and Weidi Xie and Andrew Zisserman},  
+    booktitle={CVPR},  
+    year={2023}}
 ```

@@ -105,6 +105,13 @@ class MadDownloader(OwnCloudDownloader):
                 password=self.password,
                 verbose=True)
         
+        self.unpack_tar()
+            
+    def unpack_tar(self,):
+        os.system(f"tar -xf {self.LocalDirectory}/annotations.tar.xz -C {self.LocalDirectory} annotations")
+        os.system(f"rm {self.LocalDirectory}/annotations.tar.xz")
+
+
 if __name__ == "__main__":
     from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter
 
