@@ -10,7 +10,7 @@ Paper accepted @CVPR22.
 ![mad](https://user-images.githubusercontent.com/26504816/144832743-a4852b5e-ec40-47e4-aa8c-b470e0638ef8.jpg)
 
 # News
-**[March 2023]** MAD-v2 is now available, check this ![link](https://www.robots.ox.ac.uk/~vgg/research/autoad/) for more details. MADv2 refines the training annotations provided by MADv1 reducing transcription error and work recognition thanks to Whisper. Additionally, AutoAD introduces the first captioning baseline on MAD data. </br>
+**[March 2023]** MAD-v2 is now available, check this [link](https://www.robots.ox.ac.uk/~vgg/research/autoad/) for more details. MADv2 refines the training annotations provided by MADv1 reducing transcription error and work recognition thanks to Whisper. Additionally, AutoAD introduces the first captioning baseline on MAD data. </br>
 **[June 2022]** MAD-v1 accepted at CVPR2022. </br>
 **[June 2022]** MAD-v1 release. </br>
 
