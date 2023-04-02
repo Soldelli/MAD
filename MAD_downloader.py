@@ -85,13 +85,17 @@ class MadDownloader(OwnCloudDownloader):
 
         self.files = [
             'annotations.tar.xz',
-            'CLIP_B32_frames_features_5fps.h5',
-            'CLIP_B32_language_features_MAD_test.h5',
-            'CLIP_B32_language_tokens_features.h5',
-            'CLIP_L14_frames_features_5fps.h5',
-            'CLIP_L14_language_tokens_features.h5',
+            'features/CLIP_B32_frames_features_5fps.h5',
+            'features/CLIP_B32_language_features_MAD_test.h5',
+            'features/CLIP_B32_language_tokens_features.h5',
+            'features/CLIP_L14_frames_features_5fps.h5',
+            'features/CLIP_L14_language_tokens_features.h5',
             'DataInspection.ipynb',
         ]
+
+        feat_dir = os.path.join(self.LocalDirectory, 'features')
+        if not os.path.exists(feat_dir):
+            os.makedirs(feat_dir)
         
     def download(self):
         files = '\n\t- '.join(self.files)
