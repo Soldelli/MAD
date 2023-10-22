@@ -78,7 +78,7 @@ class OwnCloudDownloader():
     
 class MadDownloader(OwnCloudDownloader):
     def __init__(self, LocalDirectory, password, download_link, 
-                 OwnCloudServer="https://exrcsdrive.kaust.edu.sa/exrcsdrive/public.php/webdav/", ):
+                 OwnCloudServer="https://exrcsdrive.kaust.edu.sa/public.php/webdav/", ):
         super().__init__(LocalDirectory, OwnCloudServer)
         self.password = password
         self.user = os.path.basename(download_link)
